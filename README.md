@@ -141,14 +141,14 @@ plugins {
 }
 
 android {
-    compileSdkVersion(28)
+    compileSdkVersion(Versions.compileSdkVersion)
     defaultConfig {
-        applicationId = "com.raqun.kotlindslsample"
-        minSdkVersion(17)
-        targetSdkVersion(28)
-        versionCode = 1
-        versionName = "1.0"
-        testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
+        applicationId = Config.applicatiınId
+        minSdkVersion(Versions.minSdkVersion)
+        targetSdkVersion(Versions.targetSdkVersion)
+        versionCode = Release.versionCode
+        versionName = Release.versionName
+        testInstrumentationRunner = Config.testInstrumentationRunner
     }
     buildTypes {
         getByName("release") {
