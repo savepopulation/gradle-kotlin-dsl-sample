@@ -1,7 +1,7 @@
 ![alt text](/art/ss1.jpeg)
 
 # Gradle Kotlin-DSL Sample
-How to use Kotlin in Gradle?
+How to use Kotlin in Gradle? How to use Kotlin in Gradle? Step by Step Kotlin DSL migration guide.
 
 ## Step by Step Migration Guide to Kotlin-DSL
 
