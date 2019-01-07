@@ -68,6 +68,15 @@ object Modules {
 }
 ```
 
+Plugins.kt:
+```Kotlin
+object Plugins {
+    val androidApplication = "com.android.application"
+    val kotlinAndroid = "kotlin-android"
+    val kotlinAndroidExtensions = "kotlin-android-extensions"
+}
+```
+
 Versions.kt:
 ```Kotlin
 object Release {
@@ -135,9 +144,9 @@ Rename your module level ```build.gradle``` to ```build.gradle.kts```
 Refactor your code like the following:
 ```Kotlin
 plugins {
-    id("com.android.application")
-    id("kotlin-android")
-    id("kotlin-android-extensions")
+    id(Plugins.androidApplication)
+    id(Plugins.kotlinAndroid)
+    id(Plugins.kotlinAndroidExtensions)
 }
 
 android {
