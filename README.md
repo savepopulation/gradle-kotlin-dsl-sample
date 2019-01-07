@@ -29,7 +29,7 @@ repositories {
 Create your dependency and config files in ```buildSrc/src/main/java```
 
 ClassPaths:
-```
+```Kotlin
 object ClassPaths {
     val gradleClasspath = "com.android.tools.build:gradle:${Versions.gradleVersion}"
     val kotlinGradlePluginClasspath = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlinVersion}"
@@ -37,15 +37,15 @@ object ClassPaths {
 ```
 
 Config:
-```
+```Kotlin
 object Config {
     val applicatiınId = "com.raqun.phonebox"
     val testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
 }
 ```
 
-Dependencies:
-```
+Dependencies.kt:
+```Kotlin
 object CoreLibraries {
     val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlinVersion}"
 }
@@ -62,14 +62,14 @@ object TestLibraries {
 ```
 
 Modules:
-```
+```Kotlin
 object Modules {
     val app = ":app"
 }
 ```
 
-Versions:
-```
+Versions.kt:
+```Kotlin
 object Release {
     val versionCode = 1
     val versionName = "1.0.0"
@@ -103,7 +103,7 @@ Rename your ```settings.gradle``` to ```settings.gradle.kts```
 ### Step 5:
 Rename your project level ```build.gradle``` to ```build.gradle.kts```
 Refactor your code like the following:
-```
+```Kotlin
 buildscript {
     repositories {
         google()
@@ -133,7 +133,7 @@ task<Delete>("clean") {
 ### Step 6: 
 Rename your module level ```build.gradle``` to ```build.gradle.kts```
 Refactor your code like the following:
-```
+```Kotlin
 plugins {
     id("com.android.application")
     id("kotlin-android")
